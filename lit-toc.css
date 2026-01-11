@@ -1,0 +1,30 @@
+@layer default {
+    lit-toc {
+        display: block;
+    }
+
+    lit-toc li {
+        padding-top: 5px;
+    }
+}
+@layer attributes {
+
+    lit-toc[dropdown="maybe"] > drop-down {
+        display: flex;
+        flex-direction: column;
+    }
+
+    lit-toc[dropdown="maybe"] > .content {
+        display: none;
+    }
+
+    @media (min-width: 1024px) {
+        lit-toc[dropdown="maybe"] > drop-down {
+            display: none;
+        }
+
+        lit-toc[dropdown="maybe"] > .content {
+            display: block;
+        }
+    }
+}
