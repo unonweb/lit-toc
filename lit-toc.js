@@ -1,7 +1,7 @@
 import { LitElement, html } from 'lit'
-import StickyController from '../_controllers/StickyController'
-import ToggleController from '../_controllers/ToggleController'
-import ToggleControllerAttributes from '../_controllers/ToggleController.attributes'
+import StickyController from '../../commons/lit-controllers/StickyController.js'
+import ToggleController from '../../commons/lit-controllers/TocController.js'
+import ToggleControllerAttributes from '../../commons/lit-controllers/ToggleController.attributes.js'
 
 export default class LitToc extends LitElement {
 	/*
